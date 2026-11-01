@@ -3,334 +3,239 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Faith Family Community | Faith Through the Fire</title>
-
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       color: white;
-      background: linear-gradient(145deg, #210b13, #5b1c18, #210b13);
+      background: linear-gradient(145deg,#210b13,#5b1c18,#210b13);
       min-height: 100vh;
     }
-
     header {
       text-align: center;
-      padding: 35px 15px;
+      padding: 32px 15px;
       background: #30121e;
       border-bottom: 2px solid #ff7845;
     }
-
-    h1 {
-      color: #ffce73;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      color: #ffe0c2;
-    }
-
-    nav {
-      text-align: center;
-      padding: 15px;
-    }
-
-    a {
-      color: #ffd26d;
-    }
-
-    main {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
-    }
-
+    h1 { color: #ffc05c; margin: 0 0 12px; }
+    h2 { color: #ffb544; font-size: 21px; }
+    p { line-height: 1.6; }
+    nav { text-align: center; padding: 20px; }
+    a { color: #ffc05c; }
+    main { max-width: 700px; margin: auto; padding: 0 18px; }
     .card {
-      background: #301923;
-      border: 1px solid #a74730;
+      background: #301a25;
+      border: 1px solid #a74c30;
       border-radius: 10px;
-      padding: 22px;
-      margin-bottom: 18px;
+      padding: 23px;
+      margin-bottom: 20px;
     }
-
-    h2 {
-      color: #ffca65;
-      font-size: 21px;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    .notice {
-      color: #ffd3c4;
-      font-size: 14px;
-    }
-
-    input {
-      display: block;
+    .notice { color: #ffbca7; font-size: 14px; }
+    label { display: block; margin: 12px 0 7px; }
+    input, textarea {
       width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: 1px solid #d59a7d;
-      font-size: 16px;
+      padding: 13px;
+      border-radius: 5px;
+      border: 1px solid #b67d68;
+      font: inherit;
     }
-
+    textarea { min-height: 95px; resize: vertical; }
     button {
-      padding: 11px 16px;
-      margin: 5px 5px 5px 0;
-      background: #ffb347;
-      color: #281019;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
+      background: #ffb544;
+      color: #251015;
+      border: 0;
+      border-radius: 5px;
+      padding: 12px;
+      margin: 7px 5px 7px 0;
       cursor: pointer;
+      font-weight: bold;
     }
-
-    button:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
+    button:disabled { opacity: .45; cursor: not-allowed; }
+    .status { color: #ffd080; overflow-wrap: anywhere; }
+    .chat-preview {
+      border: 1px solid #80515b;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+      background: #24151f;
     }
-
-    #accountStatus {
-      color: #ffdf9b;
-      overflow-wrap: anywhere;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 14px;
-      color: #ffd4bb;
-    }
+    footer { text-align: center; padding: 25px; color: #ffbf9a; }
   </style>
 </head>
-
 <body>
 
-  <header>
-    <h1>🔥 Faith Family Community ❤️</h1>
-    <p>A place for faith, hope, encouragement, and kindness.</p>
-  </header>
+<header>
+  <h1>🔥 Faith Family Community ❤️</h1>
+  <p>A place for faith, hope, encouragement, and kindness.</p>
+</header>
 
-  <nav>
-    <a href="index.html">🏠 Back to Home</a>
-    |
-    <a href="bible.html">📖 Bible Library</a>
-  </nav>
+<nav>
+  <a href="index.html">🏠 Back to Home</a> |
+  <a href="bible.html">📖 Bible Library</a>
+</nav>
 
-  <main>
+<main>
+  <section class="card">
+    <h2>💛 Welcome to Our Faith Family!</h2>
+    <p>"Therefore encourage one another and build each other up." — 1 Thessalonians 5:11</p>
+    <p>Be kind, respect everyone's privacy, and share encouragement through faith.</p>
+  </section>
 
-    <section class="card">
-      <h2>💛 Welcome to Our Faith Family!</h2>
-      <p>
-        "Therefore encourage one another and build each other up."
-        — 1 Thessalonians 5:11
-      </p>
-      <p>
-        Be kind, respect everyone's privacy, and share
-        encouragement through faith.
-      </p>
-    </section>
+  <section class="card">
+    <h2>🔐 Member Sign In</h2>
+    <p>Sign in or create an account to join our faith family.</p>
 
-    <section class="card">
-      <h2>🔐 Member Sign In</h2>
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email" placeholder="Enter your email">
 
-      <p>Sign in or create an account to join our faith family.</p>
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="current-password" placeholder="Enter your password">
 
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        placeholder="Enter your email"
-        autocomplete="email"
-      >
+    <div>
+      <button id="signIn">Sign In</button>
+      <button id="signUp">Create Account</button>
+      <button id="googleSignIn">Sign In with Google</button>
+      <button id="signOut" disabled>Sign Out</button>
+    </div>
 
-      <label for="password">Password</label>
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter your password"
-        autocomplete="current-password"
-      >
+    <p id="authStatus" class="status" role="status">Checking sign-in...</p>
+    <p class="notice">Keep your password private. Never share it with another member or the website owner.</p>
+  </section>
 
-      <button id="signInButton" disabled>Sign In</button>
-      <button id="signUpButton" disabled>Create Account</button>
-      <button id="googleButton" disabled>Sign In with Google</button>
-      <button id="signOutButton" disabled>Sign Out</button>
+  <section class="card">
+    <h2>💬 Community Chat</h2>
+    <p>Share encouragement and faith-filled messages with our community.</p>
 
-      <p id="accountStatus" role="status">
-        Connecting to Firebase...
-      </p>
+    <div class="chat-preview">
+      <p>💛 Welcome to Faith Family Chat!</p>
+      <p class="notice">Live messages aren't available yet. We're setting up reporting and moderation before opening the chat.</p>
+    </div>
 
-      <p class="notice">
-        Keep your password private. Never share it with
-        another member or the website owner.
-      </p>
-    </section>
+    <label for="message">Your message</label>
+    <textarea id="message" maxlength="500" placeholder="Share an encouraging message..." disabled></textarea>
 
-    <section class="card">
-      <h2>💬 Community Chat</h2>
-      <p>
-        Share encouragement and faith-filled messages
-        with our community.
-      </p>
-      <p class="notice">
-        Community messaging is coming soon.
-        We're preparing moderation and safety features
-        before opening the chat.
-      </p>
-    </section>
+    <button disabled>Send Message (Coming Soon)</button>
+    <button disabled>Report Message (Coming Soon)</button>
 
-    <section class="card">
-      <h2>💌 Private Messages</h2>
-      <p>
-        Connect privately with other community members.
-      </p>
-      <p class="notice">
-        Private messaging is not available yet.
-        Privacy and safety protections are being prepared.
-      </p>
-    </section>
+    <p class="notice">Please don't share your address, phone number, school, or other private information.</p>
+  </section>
 
-    <section class="card">
-      <h2>❤️ Message the Website Owner</h2>
-      <p>
-        Have a question, prayer request, or suggestion
-        for Faith Through the Fire?
-      </p>
-      <p class="notice">
-        A private contact option is being prepared.
-        Please don't post personal information publicly.
-      </p>
-    </section>
+  <section class="card">
+    <h2>💌 Private Messages</h2>
+    <p>Connect privately with other community members.</p>
+    <p class="notice">Private messaging is not available yet. Privacy and safety protections are being prepared.</p>
+  </section>
 
-  </main>
+  <section class="card">
+    <h2>❤️ Message the Website Owner</h2>
+    <p>Have a question, prayer request, or suggestion for Faith Through the Fire?</p>
+    <p class="notice">A private contact option is being prepared. Please don't post personal information publicly.</p>
+  </section>
+</main>
 
-  <footer>
-    🔥 Faith Through the Fire — Faith, Hope & Love ❤️
-  </footer>
+<footer>🔥 Faith Through the Fire — Faith, Hope & Love ❤️</footer>
 
-  <script type="module">
-    import { initializeApp } from
-      "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+  import {
+    getAuth,
+    onAuthStateChanged,
+    signInWithEmailAndPassword,
+    createUserWithEmailAndPassword,
+    signInWithPopup,
+    GoogleAuthProvider,
+    signOut
+  } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 
-    import {
-      getAuth,
-      onAuthStateChanged,
-      createUserWithEmailAndPassword,
-      signInWithEmailAndPassword,
-      signInWithPopup,
-      GoogleAuthProvider,
-      signOut
-    } from
-      "https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyCk_gVKvAoTRMmDZyh5B5MvuFnpksPR0g",
+    authDomain: "faith-through-the-fire.firebaseapp.com",
+    projectId: "faith-through-the-fire",
+    storageBucket: "faith-through-the-fire.firebasestorage.app",
+    messagingSenderId: "693618966434",
+    appId: "1:693618966434:web:89e4c715149a015a3e7cfb"
+  };
 
-    import { getFirestore } from
-      "https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js";
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const googleProvider = new GoogleAuthProvider();
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyCk_gVKvAAoTRMmDZyh5B5MvuFnpksPR0g",
-      authDomain: "faith-through-the-fire.firebaseapp.com",
-      projectId: "faith-through-the-fire",
-      storageBucket: "faith-through-the-fire.firebasestorage.app",
-      messagingSenderId: "693618966434",
-      appId: "1:693618966434:web:89e4c715149a015a3e7cfb"
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
+  const status = document.getElementById("authStatus");
+  const signInButton = document.getElementById("signIn");
+  const signUpButton = document.getElementById("signUp");
+  const googleButton = document.getElementById("googleSignIn");
+  const signOutButton = document.getElementById("signOut");
+
+  function showError(error) {
+    const messages = {
+      "auth/unauthorized-domain": "This website domain needs to be authorized in Firebase.",
+      "auth/popup-closed-by-user": "Google sign-in was canceled.",
+      "auth/invalid-email": "Please enter a valid email.",
+      "auth/invalid-credential": "Email or password was incorrect.",
+      "auth/email-already-in-use": "An account already exists with this email.",
+      "auth/weak-password": "Please choose a stronger password.",
+      "auth/operation-not-allowed": "This sign-in method isn't enabled in Firebase."
     };
+    status.textContent = messages[error.code] || "Sign-in error. Please try again.";
+  }
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const db = getFirestore(app);
-
-    const emailInput = document.getElementById("email");
-    const passwordInput = document.getElementById("password");
-    const status = document.getElementById("accountStatus");
-
-    const signInButton = document.getElementById("signInButton");
-    const signUpButton = document.getElementById("signUpButton");
-    const googleButton = document.getElementById("googleButton");
-    const signOutButton = document.getElementById("signOutButton");
-
-    function showError(error) {
-      const messages = {
-        "auth/invalid-email": "Please enter a valid email address.",
-        "auth/weak-password": "Please choose a stronger password.",
-        "auth/email-already-in-use": "That email already has an account.",
-        "auth/invalid-credential": "Incorrect email or password.",
-        "auth/popup-closed-by-user": "Google sign-in was canceled.",
-        "auth/unauthorized-domain": "This website domain needs to be authorized in Firebase."
-      };
-
-      status.textContent =
-        messages[error.code] ||
-        "Something went wrong. Please try again.";
+  signInButton.addEventListener("click", async () => {
+    try {
+      await signInWithEmailAndPassword(auth, email.value.trim(), password.value);
+      password.value = "";
+    } catch (error) {
+      showError(error);
     }
+  });
 
-    signInButton.addEventListener("click", async () => {
-      try {
-        await signInWithEmailAndPassword(
-          auth,
-          emailInput.value.trim(),
-          passwordInput.value
-        );
-        passwordInput.value = "";
-      } catch (error) {
-        showError(error);
-      }
-    });
+  signUpButton.addEventListener("click", async () => {
+    try {
+      await createUserWithEmailAndPassword(auth, email.value.trim(), password.value);
+      password.value = "";
+    } catch (error) {
+      showError(error);
+    }
+  });
 
-    signUpButton.addEventListener("click", async () => {
-      try {
-        await createUserWithEmailAndPassword(
-          auth,
-          emailInput.value.trim(),
-          passwordInput.value
-        );
-        passwordInput.value = "";
-      } catch (error) {
-        showError(error);
-      }
-    });
+  googleButton.addEventListener("click", async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+    } catch (error) {
+      showError(error);
+    }
+  });
 
-    googleButton.addEventListener("click", async () => {
-      try {
-        const provider = new GoogleAuthProvider();
-        await signInWithPopup(auth, provider);
-      } catch (error) {
-        showError(error);
-      }
-    });
+  signOutButton.addEventListener("click", async () => {
+    try {
+      await signOut(auth);
+    } catch (error) {
+      showError(error);
+    }
+  });
 
-    signOutButton.addEventListener("click", async () => {
-      try {
-        await signOut(auth);
-      } catch (error) {
-        showError(error);
-      }
-    });
+  onAuthStateChanged(auth, user => {
+    const signedIn = Boolean(user);
 
-    onAuthStateChanged(auth, (user) => {
-      const signedIn = Boolean(user);
+    signInButton.disabled = signedIn;
+    signUpButton.disabled = signedIn;
+    googleButton.disabled = signedIn;
+    signOutButton.disabled = !signedIn;
 
-      signInButton.disabled = signedIn;
-      signUpButton.disabled = signedIn;
-      googleButton.disabled = signedIn;
-      signOutButton.disabled = !signedIn;
+    email.disabled = signedIn;
+    password.disabled = signedIn;
 
-      emailInput.disabled = signedIn;
-      passwordInput.disabled = signedIn;
+    if (signedIn) password.value = "";
 
-      status.textContent = signedIn
-        ? "Signed in as " + (user.email || "a community member")
-        : "Not signed in. You can sign in or create an account.";
-    });
-  </script>
+    status.textContent = signedIn
+      ? "Signed in as " + (user.email || "a community member")
+      : "Not signed in. You can sign in or create an account.";
+  });
+</script>
 
 </body>
 </html>
